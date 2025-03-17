@@ -24,8 +24,8 @@ driver = webdriver.Firefox(options=firefox_options)  # Pass options to the drive
 # driver = webdriver.Firefox()  # Ensure the correct path to geckodriver is set
 
 # Open the website
-# driver.get("http://localhost:8000/Prijave%20za%20utakmicu%20proljece%202025%20_%20Liverpool%20Hrvatska.html")
-# driver.get("http://localhost:8000/prijave-za-utakmicu-proljece-2025.html")
+# driver.get("http://localhost:8000/webpage2.html")
+# driver.get("http://localhost:8000/webpage3.html")
 driver.get("https://www.lfccro.com/prijave-za-utakmicu-proljece-2025/")
 
 
@@ -86,8 +86,8 @@ try:
     # Wait in a loop until 3.5 seconds have passed
     while True:
         elapsed_time = time.time() - start_time
-        if elapsed_time >= 3.5:
-            break  # Exit the loop when 3.5 seconds have passed
+        if elapsed_time >= 2.5:
+            break  # Exit the loop when 2.5 seconds have passed
         time.sleep(0.1)  # Add a short sleep to avoid maxing out the CPU
 
     # Submit the form
